@@ -1,0 +1,16 @@
+# Caso de Estudio: Sistema de Cajas Autoservicio (Self-Checkout)
+
+Este proyecto analiza el diseño de una terminal de autoservicio para supermercados, enfocada en la autonomía del cliente y la prevención de pérdidas mediante la validación automática de peso.
+
+## El Problema
+El sistema debe permitir al cliente gestionar su propia compra, desde la selección del tipo de factura hasta el pago final. El desafío técnico principal es la sincronización entre el escaneo de productos y la "zona de empaque", que utiliza balanzas de precisión para asegurar que el producto escaneado coincida con el embolsado.
+
+## Aspectos Destacados del Análisis
+**Validación Cruzada de Peso:** El sistema compara el peso teórico del producto (desde la base de datos) con el peso real detectado en la zona de empaque en tiempo real, bloqueando la operación ante discrepancias.
+**Gestión de Medios de Pago:** El análisis cubre flujos complejos para pagos tanto en efectivo (validación de billetes y falta de dinero) como con tarjeta (comunicación con entidad bancaria).
+**Integración de Stock:** Cada venta finalizada dispara una actualización automática del inventario de productos.
+
+## Componentes Clave
+**Diagrama de Actividades (Realizar Compra):** Modelado del flujo principal que incluye bifurcaciones para errores de pago y alertas de empaque.
+**Diagrama de Comunicación:** Detalla la interacción entre los objetos `Caja`, `Producto`, `Venta` y los periféricos de hardware.
+**Modelo de Dominio:** Definición de la estructura de `Venta`, `Línea de Productos` y la relación con los diferentes `Tipos de Pago`.

@@ -1,0 +1,16 @@
+# Caso de Estudio: Sistema de Alquiler de Scooters Eléctricos (LIME) 🛴
+
+Este proyecto presenta el análisis de una plataforma de micromovilidad compartida. Se centra en la gestión de dispositivos IoT (scooters) distribuidos en la vía pública y su interacción con una aplicación móvil.
+
+## El Problema
+El desafío principal consiste en gestionar el ciclo de vida de los scooters (disponibilidad, batería y mantenimiento) y procesar alquileres basados en tiempo de uso y ubicación geográfica. El sistema debe manejar eventos en tiempo real, como el desbloqueo por QR y la finalización automática por inactividad.
+
+## Aspectos Destacados del Análisis
+**Gestión de Estados Complejos:** Modelado detallado de los estados del scooter, incluyendo transiciones para "En uso", "Averiado", "Sin batería" y "Mantenimiento".
+**Integración de Hardware (IoT):** El análisis contempla la interacción con GPS, conectividad 3G y sistemas de bloqueo codificado.
+**Lógica de Geolocalización:** Implementación de flujos alternativos para casos donde el scooter se encuentra en zonas no permitidas o presenta fallas de GPS.
+
+## Componentes Clave
+**Diagrama de Estados:** Esencial para entender cómo el vehículo cambia de disponibilidad según el horario de funcionamiento o el nivel de batería.
+**Diagrama de Actividades:** Flujo completo desde el escaneo del código QR hasta el débito automático en la tarjeta de crédito al finalizar el viaje.
+**Mockup de App Móvil:** Interfaz que muestra datos críticos en tiempo real: batería restante, minutos de uso y monto total acumulado.
