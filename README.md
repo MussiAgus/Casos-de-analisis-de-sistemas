@@ -28,7 +28,7 @@ Cada caso incluye documentación completa con los distintos artefactos de análi
 
 ## Herramientas y metodologías
 
-* Lenguaje de modelado: UML 2.x
+* Lenguaje de modelado: UML
 * Herramientas de modelado: Draw.io, Visual Paradigm, Balsamiq Wirefirmes.
 * Enfoque: análisis orientado a objetos con separación de responsabilidades
 
